@@ -62,4 +62,5 @@
 
 - `git push origin master` = send changes to origin via remote (commit into server)
 - `git push -u origin master` = send changes to origin via remote
+- `git push` = like above command. but saved last push command
 - `git pull origin master` = get changes from origin (contribute)
