@@ -1,9 +1,16 @@
 # Hamid Alavi's Git tips
 
+## Please fix tips if i wrote wrong. thanks so mush for contributing :)
+
 - `git init` = create git file (repository)
 - `git status` = see status of git
 
-## Add to stage
+## Help
+
+- `git help` [**text**] = get help from git
+  - press `q` to guit from help mode
+
+## Add to Stage
 
 - `git add` [**file**] = add file to stage list
 - `git add` -A = add all files to stage list
@@ -17,7 +24,8 @@
 ## Commit
 
 - `git commit` = open a editor to send commit comments
-- `git commit -m` '**message**' = commit all thing in stage list
+- `git commit -m` '**message**' = commit all things in stage list
+- `git commit -S -m` '**message**' = commit all things in stage list and signature them
 
 ## Restore
 
@@ -27,11 +35,17 @@
 ## Config
 
 - `git config --global user.email` "**you@example.com**" = specify email for user
+  - use `git config --global user.email` for just showing user's email
 - `git config --global user.name` "**Your Name**" = specify name for user
+  - use `git config --global user.name` for just showing user's name
+- `git config --global user.signingKey` = shows owner signin key
+- `git config --global user.signingkey` [**key**] = set signing keys for git
+  - example: git config --global user.signingkey xxxxxxxxxxxxxxxxx
 
 ## Git Log
 
 - `git log` = shows all logs (activity)
+  -press `q` to quit log mode
 
 ## Difference
 
@@ -63,4 +77,46 @@
 - `git push origin master` = send changes to origin via remote (commit into server)
 - `git push -u origin master` = send changes to origin via remote
 - `git push` = like above command. but saved last push command
+- `git push origin` [**tag**] = send tag to origin via remote
+  - you can also use `git push origin --tags` command
 - `git pull origin master` = get changes from origin (contribute)
+
+## Show Changes
+
+- `git show` [**code**] = shows changes of specific commit (whats happend in that commit)
+  - press `q` to quit show mode
+- `git show` [**tag**] = shows changes of specific tag (whats happend in that commit)
+
+## Tag
+
+- `git tag -a` [**text**] -m '**message**' = makes a tag for the repository (annotation)
+  - example: git tag v1.0 -m 'creating first tag'
+- `git tag -a` [**text**] [**code**] = makes tag for the specific commit of repository (annotation)(use for release versions)
+  - example: git tag v1.1 1692d9f31f0d9ba647ecdffb38b40c47a8f4cf66
+- `git tag -s` [**text**] -m '**message**' = makes a tag for the repository with signature (signing key)
+- `git tag -v` [**tag**] = shows tag information (tagger, date, type, signature and etc.)
+
+## Key and Hash
+
+- pretty good privacy (pgp) = using for keys
+  - use gpg for usage
+- `gpg --list-keys` = shows all keys
+  - if for first time, automatically create necessary files
+- `gpg --gen-key` = generating a key
+- `gpg --list-secret-keys` = list of secret keys
+- `gpg --list-secret-keys --keyid-format LONG` = list of secret keys as long format key id
+
+## Blame
+
+- `git blame` [**file**] = shows writer of all lines of code or content (history)
+- `git blame` [**file**] -L[n] = shows writer of that line and above of code or content
+  - example: git blame hamid.html L5
+    - output: ^xxxxxx (Hamid Alavi 2020-07-07 05:34:19 +0430  5) ....
+- `git blame` [**file**] -L[n],[n] = shows writer of between of n lines of code or content
+
+## Binary Search Commit
+
+- `git bisect start` = you have started the wizard and it won't end until you type git bisect reset
+- `git bisect reset` = ends process of bisect
+- `git bisect good` = if that version works correctly you should type **good**
+- `git bisect bad` = if that version is broken, you should type **bad**
