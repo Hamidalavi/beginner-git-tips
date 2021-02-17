@@ -1,6 +1,6 @@
 # Hamid Alavi's Git tips
 
-## Please fix tips if i wrote wrong. thanks so mush for contributing :)
+## Please fix tips if I wrote wrong. thanks so much for your contributing :)
 
 - `git init` = create git file (repository)
 - `git status` = see status of git
@@ -49,7 +49,7 @@
 ## Git Log
 
 - `git log` = shows git logs (history of commits)
-  -press `q` to quit log mode
+  - press `q` to quit log mode
 - `git log --oneline` = displays git logs by one line
 - `git log --oneline --all` = displays git logs by one line on all branch
 
