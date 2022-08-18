@@ -1,8 +1,8 @@
 # Git Tutorial with Examid
 
-## Donate our Team:
-[![built-with-love](https://forthebadge.com/images/badges/built-with-love.svg)](https://reymit.ir/examid6540)
-[![Donate](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://reymit.ir/examid6540)
+## Donate to our Team:
+[![DonateReymit](https://img.shields.io/badge/Donate-Reymit-purple)](https://reymit.ir/examid6540)
+[![DonatePaypal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://reymit.ir/examid6540/international-donate)
 
 ## This Tutorial contains:
 [![ShellScript](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.shellscript.sh/)
