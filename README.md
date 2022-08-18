@@ -23,7 +23,7 @@
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/examid6540)
 
 ## Stats:
-![Size](https://img.shields.io/badge/size-267kB-blue)
+![Size](https://img.shields.io/badge/size-7.76kB-blue)
 ![TestPass](https://shields.io/badge/test-passing-brightgreen)
 ![DiscordOnline](https://img.shields.io/discord/852100868303749130?color=purple&label=discord%20chat)
 ![TotalDownloads](https://img.shields.io/github/downloads/Hamidalavi/CSS-step-by-step/total)
